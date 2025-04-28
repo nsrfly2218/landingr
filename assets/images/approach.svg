@@ -1,0 +1,61 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .st0{fill:#00bc60;}
+    .st1{fill:#e6f5ec;}
+    .st2{fill:#FFFFFF;}
+    .st3{fill:#4CAF50;}
+    .st4{fill:#2C3E50;}
+    .st5{fill:#F5F5F5;}
+  </style>
+  
+  <!-- Background shapes -->
+  <circle class="st1" cx="300" cy="200" r="170" opacity="0.2" />
+  
+  <!-- Center Gear -->
+  <circle class="st2" cx="300" cy="200" r="100" stroke="#00bc60" stroke-width="3" />
+  <circle class="st1" cx="300" cy="200" r="80" />
+  <circle class="st0" cx="300" cy="200" r="20" />
+  
+  <!-- Process Steps -->
+  <g transform="translate(300, 200)">
+    <!-- Research Step -->
+    <g transform="rotate(0) translate(0, -140)">
+      <circle class="st2" cx="0" cy="0" r="30" stroke="#00bc60" stroke-width="2" />
+      <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle" fill="#2C3E50">Research</text>
+    </g>
+    
+    <!-- Design Step -->
+    <g transform="rotate(90) translate(0, -140)">
+      <circle class="st2" cx="0" cy="0" r="30" stroke="#00bc60" stroke-width="2" />
+      <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle" fill="#2C3E50">Design</text>
+    </g>
+    
+    <!-- Develop Step -->
+    <g transform="rotate(180) translate(0, -140)">
+      <circle class="st2" cx="0" cy="0" r="30" stroke="#00bc60" stroke-width="2" />
+      <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle" fill="#2C3E50">Develop</text>
+    </g>
+    
+    <!-- Improve Step -->
+    <g transform="rotate(270) translate(0, -140)">
+      <circle class="st2" cx="0" cy="0" r="30" stroke="#00bc60" stroke-width="2" />
+      <text x="0" y="5" font-family="Arial" font-size="12" text-anchor="middle" fill="#2C3E50">Improve</text>
+    </g>
+  </g>
+  
+  <!-- Connectors -->
+  <line x1="300" y1="100" x2="300" y2="170" stroke="#00bc60" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="400" y1="200" x2="330" y2="200" stroke="#00bc60" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="300" y1="300" x2="300" y2="230" stroke="#00bc60" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="200" y1="200" x2="270" y2="200" stroke="#00bc60" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Arrows around center -->
+  <path d="M320,180 A25,25 0 0,1 320,220" fill="none" stroke="#FFFFFF" stroke-width="3" />
+  <path d="M320,220 L330,215 L325,230 L315,215 Z" fill="#FFFFFF" />
+  
+  <!-- Decorative elements -->
+  <circle class="st0" cx="150" cy="100" r="15" opacity="0.7" />
+  <circle class="st0" cx="450" cy="300" r="20" opacity="0.7" />
+  <rect class="st0" x="500" y="120" width="30" height="30" rx="5" transform="rotate(45 500 120)" opacity="0.5" />
+  <rect class="st0" x="120" y="320" width="40" height="40" rx="5" opacity="0.5" />
+</svg> 

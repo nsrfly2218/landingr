@@ -282,3 +282,40 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call reveal on initial load
   reveal();
 });
+
+// Support for RTL
+document.addEventListener("DOMContentLoaded", function () {
+  // Fix any direction-specific animations
+  const readMoreLinks = document.querySelectorAll(".read-more");
+  readMoreLinks.forEach((link) => {
+    // Replace default icon movement for RTL
+    link.addEventListener("mouseenter", function () {
+      const icon = this.querySelector("i");
+      if (icon) {
+        icon.style.transform = "translateX(-5px) scaleX(-1)";
+      }
+    });
+
+    link.addEventListener("mouseleave", function () {
+      const icon = this.querySelector("i");
+      if (icon) {
+        icon.style.transform = "scaleX(-1)";
+      }
+    });
+  });
+
+  // Ensure slider buttons work properly in RTL
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+
+  if (prevBtn && nextBtn) {
+    // Swap next and prev functionality for RTL
+    const originalPrevClick = prevBtn.onclick;
+    const originalNextClick = nextBtn.onclick;
+
+    if (originalPrevClick && originalNextClick) {
+      prevBtn.onclick = originalNextClick;
+      nextBtn.onclick = originalPrevClick;
+    }
+  }
+});

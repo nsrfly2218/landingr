@@ -27,11 +27,13 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial";
   line-height: 1.6;
   color: var(--text-color);
   background-color: #fff;
   overflow-x: hidden;
+  direction: rtl;
+  text-align: right;
 }
 
 a {
@@ -155,7 +157,8 @@ img {
 }
 
 .nav li {
-  margin-left: 30px;
+  margin-left: 0;
+  margin-right: 30px;
 }
 
 .nav a {
@@ -169,7 +172,8 @@ img {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: auto;
+  right: 0;
   width: 0;
   height: 2px;
   background-color: var(--primary-color);
@@ -237,6 +241,8 @@ img {
 .hero-content {
   flex: 1;
   max-width: 600px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .hero-content h1 {
@@ -254,7 +260,8 @@ img {
 }
 
 .hero-content .btn {
-  margin-right: 15px;
+  margin-right: 0;
+  margin-left: 15px;
   margin-bottom: 15px;
 }
 
@@ -369,7 +376,8 @@ img {
 .why-feature i {
   font-size: 24px;
   color: var(--accent-color);
-  margin-right: 20px;
+  margin-right: 0;
+  margin-left: 20px;
   margin-top: 5px;
 }
 
@@ -415,7 +423,7 @@ img {
   align-items: center;
   text-align: center;
   width: 25%;
-  float: left;
+  float: right;
   position: relative;
 }
 
@@ -432,6 +440,7 @@ img {
   justify-content: center;
   margin-bottom: 20px;
   box-shadow: 0 0 0 10px rgba(63, 81, 181, 0.1);
+  float: right;
 }
 
 .step-content h3 {
@@ -471,6 +480,7 @@ img {
 .counter {
   text-align: center;
   padding: 20px;
+  float: right;
 }
 
 .counter i {
@@ -653,10 +663,12 @@ img {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  text-align: right;
 }
 
 .pricing-features i {
-  margin-right: 10px;
+  margin-right: 0;
+  margin-left: 10px;
 }
 
 .pricing-features .fa-check {
@@ -714,6 +726,7 @@ img {
 .testimonial-author {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .testimonial-author img {
@@ -721,7 +734,7 @@ img {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .testimonial-author h4 {
@@ -826,7 +839,7 @@ img {
 }
 
 .faq-item.active .faq-question i {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scaleX(-1);
 }
 
 .faq-answer {
@@ -892,6 +905,7 @@ img {
 
 .blog-content {
   padding: 25px;
+  text-align: right;
 }
 
 .blog-date {
@@ -1024,18 +1038,19 @@ img {
 .subscribe-form {
   display: flex;
   margin-bottom: 20px;
+  flex-direction: row-reverse;
 }
 
 .subscribe-form input {
   flex: 1;
   padding: 15px 20px;
   border: none;
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
   font-size: 1rem;
 }
 
 .subscribe-form button {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
   padding: 0 30px;
 }
 
@@ -1217,14 +1232,9 @@ img {
     flex-direction: column;
   }
 
-  .subscribe-form input {
-    border-radius: var(--border-radius);
-    margin-bottom: 15px;
-  }
-
+  .subscribe-form input,
   .subscribe-form button {
     border-radius: var(--border-radius);
-    width: 100%;
   }
 
   .pricing-card.popular {
@@ -1252,4 +1262,138 @@ img {
     width: 100%;
     text-align: center;
   }
+}
+
+/* 
+========================================
+   Our Approach Section
+======================================== 
+*/
+.our-approach {
+  background-color: #fff;
+}
+
+.our-approach .why-feature i {
+  color: var(--primary-color);
+}
+
+.our-approach .why-feature h3 {
+  color: var(--primary-dark);
+}
+
+/* 
+========================================
+   Success Stories Section
+======================================== 
+*/
+.success-stories {
+  background-color: #f9fff9;
+}
+
+.success-stories .why-feature i {
+  color: #ffd700;
+  font-size: 26px;
+}
+
+.success-stories .why-feature h3 {
+  font-weight: 700;
+}
+
+.success-stories .why-feature p {
+  font-style: italic;
+}
+
+/* 
+========================================
+   RTL Support (Additional)
+======================================== 
+*/
+.process-step {
+  float: right;
+}
+
+.step-number {
+  float: right;
+}
+
+.counter {
+  float: right;
+}
+
+.testimonial-author {
+  flex-direction: row-reverse;
+}
+
+.blog-content {
+  text-align: right;
+}
+
+.subscribe-form {
+  flex-direction: row-reverse;
+}
+
+.subscribe-form input {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.subscribe-form button {
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.footer-links-column ul {
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    border-radius: var(--border-radius);
+  }
+}
+
+/* Update layout direction for flex containers */
+.header .container,
+.hero .container,
+.testimonial-author,
+.why-us-content,
+.footer-content {
+  flex-direction: row-reverse;
+}
+
+/* Social links icons */
+.social-links a i {
+  transform: scaleX(-1);
+}
+
+/* 
+========================================
+   RTL Typography Adjustments
+======================================== 
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+textarea,
+select,
+span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, "Arial";
+}
+
+/* Fix arrow directions */
+.faq-question i.fa-chevron-down {
+  transform: scaleX(-1);
+}
+.faq-item.active .faq-question i {
+  transform: rotate(180deg) scaleX(-1);
 }
