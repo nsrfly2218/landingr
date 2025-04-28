@@ -4,7 +4,9 @@
 ======================================== 
 */
 :root {
-  --primary-color: #3f51b5;
+  --primary-color: #00bc60;
+  --primary-light: #33c97f;
+  --primary-dark: #008a48;
   --secondary-color: #2c3e50;
   --accent-color: #4caf50;
   --light-color: #f8f9fa;
