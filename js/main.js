@@ -319,3 +319,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+// Pricing Toggle
+document.addEventListener("DOMContentLoaded", function () {
+  const pricingToggle = document.getElementById("pricingToggle");
+  if (pricingToggle) {
+    pricingToggle.addEventListener("change", function () {
+      const monthlyPrices = document.querySelectorAll(".monthly-price");
+      const annualPrices = document.querySelectorAll(".annual-price");
+      const annualNotes = document.querySelectorAll(".annual-note");
+
+      monthlyPrices.forEach((price) => {
+        price.classList.toggle("hide");
+      });
+
+      annualPrices.forEach((price) => {
+        price.classList.toggle("show");
+      });
+
+      annualNotes.forEach((note) => {
+        note.classList.toggle("show");
+      });
+    });
+  }
+});

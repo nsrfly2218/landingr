@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صفحة هبوط حديثة</title>
+    <title>الرئيسية - Widers</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -15,20 +15,20 @@
     <header class="header">
       <div class="container">
         <div class="logo">
-          <a href="#">
-            <h2>Logo</h2>
+          <a href="#hero">
+            <h2>Widers</h2>
           </a>
         </div>
         <nav class="nav">
           <ul>
             <li><a href="#features">المميزات</a></li>
-            <li><a href="#why-us">لماذا نحن</a></li>
-            <li><a href="#our-approach">نهجنا</a></li>
-            <li><a href="#success-stories">قصص النجاح</a></li>
             <li><a href="#process">العملية</a></li>
             <li><a href="#team">الفريق</a></li>
             <li><a href="#pricing">الأسعار</a></li>
+            <li><a href="#success-stories">قصص النجاح</a></li>
             <li><a href="#faq">الأسئلة الشائعة</a></li>
+            <li><a href="#blog">المقالات</a></li>
+            <li><a href="#subscribe">تواصل معنا</a></li>
           </ul>
         </nav>
         <div class="nav-mobile">
@@ -45,15 +45,24 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>حول أعمالك مع حلولنا المبتكرة</h1>
+          <h1>
+            <span style="color: var(--primary-color)">Widers</span> واتس آب
+            أعمال API
+          </h1>
           <p>
-            عزز الإنتاجية، وحسّن سير العمل، وحقق نتائج أفضل مع منصتنا المبتكرة.
+            تمتع بخدمات الواتس آب أعمال الرسمي من ميتا ، أدر فريقك وأنشئ الردود
+            الآلية وروبوتات الدردشة وأطلق حملاتك الاعلانية رسمياً عبر وايدرز
           </p>
-          <a href="#" class="btn btn-primary">ابدأ التجربة المجانية</a>
-          <a href="#" class="btn btn-secondary">اعرف المزيد</a>
+          <p>
+            تمتع بمستوى عالي من الموثوقية لدى عملائك بتوثيق نشاطك واستخدام واجهة
+            تطبيقات واتس آب Api
+          </p>
+          <a href="#" class="btn btn-primary">طلب عرض توضيحي</a>
+
+          <a href="#official-api" class="btn btn-secondary">اعرف المزيد</a>
         </div>
         <div class="hero-image">
           <img src="assets/images/hero-image.svg" alt="صورة توضيحية" />
@@ -66,22 +75,35 @@
       <div class="container">
         <div class="section-header">
           <h2>مميزات قوية</h2>
-          <p>كل ما تحتاجه للنجاح</p>
+          <p>
+            تفعيل فوري وربط مباشر لحساب WhatsApp Business عبر منصة Widers
+            المعتمدة من Meta
+          </p>
         </div>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="fas fa-bolt"></i>
+              <i class="fa-solid fa-check"></i>
             </div>
-            <h3>سرعة فائقة</h3>
-            <p>محسن للسرعة والأداء للحفاظ على سلاسة سير العمل.</p>
+            <h3>نظام سهل</h3>
+            <p>تم تصميم النظام بأداء عالي وسهولة الاستخدام لتحسين سير العمل</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="fas fa-shield-alt"></i>
+              <i class="fa-solid fa-link"></i>
             </div>
-            <h3>آمن وموثوق</h3>
-            <p>أمان بمستوى المؤسسات لحماية بياناتك الحساسة.</p>
+            <h3>ربط آلي</h3>
+            <p>خدمات ربط آلي واسع Webhook&API</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-cogs"></i>
+            </div>
+            <h3>متكامل</h3>
+            <p>
+              التكامل مع الأنظمة الخارجية ومنصات التجارة الالكترونية والمواقع
+              والتطبيقات
+            </p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
@@ -91,13 +113,6 @@
             <p>
               ابق على اطلاع بالتغييرات من خلال الإشعارات والتحديثات الفورية.
             </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <i class="fas fa-cogs"></i>
-            </div>
-            <h3>قابل للتخصيص</h3>
-            <p>خصص المنصة لتناسب احتياجات عملك المحددة.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
@@ -111,54 +126,87 @@
               <i class="fas fa-users"></i>
             </div>
             <h3>تعاون فعال</h3>
-            <p>اعمل بسلاسة مع فريقك في الوقت الفعلي.</p>
+            <p>فريق كامل لخدمتك ودعم فني 24/7</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Us Section -->
-    <section id="why-us" class="why-us">
+    <!-- Official WhatsApp Business API Section -->
+    <section id="official-api" class="why-us official-api">
       <div class="container">
         <div class="section-header">
-          <h2>لماذا تختارنا</h2>
-          <p>المزايا التي تميزنا</p>
+          <h2>واتساب أعمال API رسمي من ميتا</h2>
+          <p>حلول رسمية ومعتمدة من Meta لأعمالك</p>
+        </div>
+        <div class="why-us-content">
+          <div class="why-us-features">
+            <div class="why-feature">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <p>حساب رسمي معتمد من Meta مع علامة التوثيق الخضراء</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <p>حماية وأمان عالي لبيانات العملاء والمحادثات</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-bolt"></i>
+              <div>
+                <p>أداء عالي وسرعة في إرسال واستقبال الرسائل</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-code"></i>
+              <div>
+                <p>واجهة برمجية API متكاملة وسهلة الاستخدام</p>
+              </div>
+            </div>
+          </div>
+          <div class="why-us-image">
+            <img src="assets/images/official-api.svg" alt="واتساب أعمال API" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Automation and Chatbots Section -->
+    <section id="automation" class="why-us automation">
+      <div class="container">
+        <div class="section-header">
+          <h2>الأتمتة والروبوتات وخيارات الدردشة</h2>
+          <p>حلول ذكية لأتمتة التواصل مع العملاء</p>
         </div>
         <div class="why-us-content">
           <div class="why-us-image">
-            <img src="assets/images/why-us.svg" alt="لماذا تختارنا" />
+            <img src="assets/images/automation.svg" alt="الأتمتة والروبوتات" />
           </div>
           <div class="why-us-features">
             <div class="why-feature">
-              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-robot"></i>
               <div>
-                <h3>دعم خبير</h3>
-                <p>فريقنا المتخصص متاح على مدار الساعة لمساعدتك في أي مشكلة.</p>
+                <p>روبوتات دردشة ذكية للرد التلقائي على الاستفسارات</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-cogs"></i>
               <div>
-                <h3>نتائج مثبتة</h3>
-                <p>
-                  انضم إلى آلاف العملاء الراضين الذين حققوا النجاح مع منصتنا.
-                </p>
+                <p>أتمتة كاملة للعمليات والردود المتكررة</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-comments"></i>
               <div>
-                <h3>حل قابل للتوسع</h3>
-                <p>منصتنا تنمو مع نمو أعمالك، متكيفة مع احتياجاتك المتغيرة.</p>
+                <p>نماذج رسائل جاهزة وقابلة للتخصيص</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-brain"></i>
               <div>
-                <h3>فعال من حيث التكلفة</h3>
-                <p>
-                  زيادة العائد على الاستثمار مع أسعارنا التنافسية وخططنا المرنة.
-                </p>
+                <p>ذكاء اصطناعي متقدم للتعامل مع المحادثات</p>
               </div>
             </div>
           </div>
@@ -166,114 +214,124 @@
       </div>
     </section>
 
-    <!-- Our Approach Section -->
-    <section id="our-approach" class="why-us our-approach">
+    <!-- Team Management Section -->
+    <section id="team-management" class="why-us team-management">
       <div class="container">
         <div class="section-header">
-          <h2>نهجنا المميز</h2>
-          <p>استراتيجيتنا المبتكرة لتحقيق أهدافك</p>
+          <h2>إدارة الفريق عبر Widers Chat</h2>
+          <p>قريباً - منصة متكاملة لإدارة فريق العمل</p>
         </div>
         <div class="why-us-content">
           <div class="why-us-features">
             <div class="why-feature">
-              <i class="fas fa-lightbulb"></i>
+              <i class="fas fa-users-cog"></i>
               <div>
-                <h3>البحث والتحليل</h3>
-                <p>
-                  نبدأ دائمًا بتحليل شامل للسوق واحتياجات عملائك لوضع استراتيجية
-                  مناسبة.
-                </p>
+                <p>إدارة متكاملة لصلاحيات ومهام فريق العمل</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-pencil-ruler"></i>
+              <i class="fas fa-tasks"></i>
               <div>
-                <h3>التصميم المبتكر</h3>
-                <p>
-                  نصمم حلولًا مبتكرة تجمع بين الجمال والوظائف العملية لتعزيز
-                  تجربة المستخدم.
-                </p>
-              </div>
-            </div>
-            <div class="why-feature">
-              <i class="fas fa-rocket"></i>
-              <div>
-                <h3>التنفيذ السريع</h3>
-                <p>
-                  نعتمد منهجية التطوير السريع لإطلاق مشروعك بكفاءة عالية وفي
-                  الوقت المحدد.
-                </p>
+                <p>توزيع وتتبع المهام بين أعضاء الفريق</p>
               </div>
             </div>
             <div class="why-feature">
               <i class="fas fa-chart-line"></i>
               <div>
-                <h3>المتابعة والتحسين</h3>
-                <p>
-                  نقدم دعمًا مستمرًا ونطور المشروع بناءً على البيانات والتغذية
-                  الراجعة.
-                </p>
+                <p>تقارير وإحصائيات أداء الفريق</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-clock"></i>
+              <div>
+                <p>جدولة المهام وتنظيم أوقات العمل</p>
               </div>
             </div>
           </div>
           <div class="why-us-image">
-            <img src="assets/images/approach.svg" alt="نهجنا المميز" />
+            <img src="assets/images/team-management.svg" alt="إدارة الفريق" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Success Stories Section -->
-    <section id="success-stories" class="why-us success-stories">
+    <!-- Database Section -->
+    <section id="database" class="why-us database">
       <div class="container">
         <div class="section-header">
-          <h2>قصص نجاح</h2>
-          <p>نتائج حقيقية لعملاء حقيقيين</p>
+          <h2>قواعد البيانات والتخزين الآلي</h2>
+          <p>تخزين وإدارة البيانات بشكل آمن ومنظم</p>
         </div>
         <div class="why-us-content">
           <div class="why-us-image">
-            <img src="assets/images/success.svg" alt="قصص النجاح" />
+            <img src="assets/images/database.svg" alt="قواعد البيانات" />
           </div>
           <div class="why-us-features">
             <div class="why-feature">
-              <i class="fas fa-star"></i>
+              <i class="fas fa-database"></i>
               <div>
-                <h3>شركة تقنية ناشئة</h3>
-                <p>
-                  زيادة المبيعات بنسبة 200% خلال 6 أشهر بعد تطبيق استراتيجيتنا
-                  التسويقية.
-                </p>
+                <p>تخزين آمن ومشفر لجميع البيانات والمحادثات</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-star"></i>
+              <i class="fas fa-sync"></i>
               <div>
-                <h3>متجر للتجارة الإلكترونية</h3>
-                <p>
-                  تحسين تجربة المستخدم أدى إلى زيادة معدل التحويل بنسبة 45%.
-                </p>
+                <p>مزامنة تلقائية للبيانات عبر جميع الأجهزة</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-star"></i>
+              <i class="fas fa-search"></i>
               <div>
-                <h3>شركة خدمات مالية</h3>
-                <p>
-                  تقليل تكاليف التشغيل بنسبة 30% مع تحسين جودة الخدمة المقدمة
-                  للعملاء.
-                </p>
+                <p>بحث متقدم في المحادثات والملفات المخزنة</p>
               </div>
             </div>
             <div class="why-feature">
-              <i class="fas fa-star"></i>
+              <i class="fas fa-shield-alt"></i>
               <div>
-                <h3>منصة تعليمية</h3>
-                <p>
-                  زيادة عدد المشتركين من 1,000 إلى 15,000 مستخدم في أقل من عام
-                  واحد.
-                </p>
+                <p>نسخ احتياطية دورية وحماية متقدمة للبيانات</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp Ads Section -->
+    <section id="whatsapp-ads" class="why-us whatsapp-ads">
+      <div class="container">
+        <div class="section-header">
+          <h2>الحملات الإعلانية على الواتس آب</h2>
+          <p>أطلق حملاتك الإعلانية على واتس آب بشكل رسمي وموثق</p>
+        </div>
+        <div class="why-us-content">
+          <div class="why-us-features">
+            <div class="why-feature">
+              <i class="fas fa-bullhorn"></i>
+              <div>
+                <p>إنشاء وإدارة الحملات الإعلانية على واتس آب بشكل رسمي</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-chart-pie"></i>
+              <div>
+                <p>تحليلات وإحصائيات مفصلة لأداء الحملات الإعلانية</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-users"></i>
+              <div>
+                <p>استهداف دقيق للجمهور المناسب لنشاطك التجاري</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <i class="fas fa-check-double"></i>
+              <div>
+                <p>توثيق رسمي للحملات الإعلانية من Meta</p>
+              </div>
+            </div>
+          </div>
+          <div class="why-us-image">
+            <img src="assets/images/ads.svg" alt="الحملات الإعلانية" />
           </div>
         </div>
       </div>
@@ -283,47 +341,39 @@
     <section id="process" class="process">
       <div class="container">
         <div class="section-header">
-          <h2>How It Works</h2>
-          <p>Simple process, exceptional results</p>
+          <h2>كيف يعمل النظام</h2>
+          <p>عملية بسيطة، أداء مثالي</p>
         </div>
         <div class="process-steps">
           <div class="process-step">
             <div class="step-number">1</div>
             <div class="step-content">
-              <h3>Sign Up</h3>
-              <p>
-                Create your account in minutes with our simple registration
-                process.
-              </p>
+              <h3>تسجيل الدخول</h3>
+              <p>قم بإنشاء حسابك في دقيقة بعملية التسجيل البسيطة.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">2</div>
             <div class="step-content">
-              <h3>Configure</h3>
-              <p>
-                Customize the platform to match your specific requirements and
-                preferences.
-              </p>
+              <h3>التكوين</h3>
+              <p>قم بتكوين النظام لمطابقة متطلباتك المعينة والتفضيلات.</p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h3>Integrate</h3>
+              <h3>التكامل</h3>
               <p>
-                Connect with your existing tools and services for a seamless
-                workflow.
+                توصيل النظام بالأدوات والخدمات الموجودة بالفعل لتحسين سير العمل.
               </p>
             </div>
           </div>
           <div class="process-step">
             <div class="step-number">4</div>
             <div class="step-content">
-              <h3>Launch</h3>
+              <h3>إطلاق النظام</h3>
               <p>
-                Go live with your optimized setup and start seeing results
-                immediately.
+                إطلاق النظام المعدل وبدء الحصول على النتائج في اللحظة الأولى.
               </p>
             </div>
           </div>
@@ -338,22 +388,22 @@
           <div class="counter">
             <i class="fas fa-users"></i>
             <div class="counter-value" data-count="10000">0</div>
-            <h3>Happy Customers</h3>
+            <h3>عملاء سعداء</h3>
           </div>
           <div class="counter">
             <i class="fas fa-download"></i>
             <div class="counter-value" data-count="50000">0</div>
-            <h3>Downloads</h3>
+            <h3>التحميلات</h3>
           </div>
           <div class="counter">
             <i class="fas fa-code"></i>
             <div class="counter-value" data-count="100000">0</div>
-            <h3>Lines of Code</h3>
+            <h3>الخطوط البرمجية</h3>
           </div>
           <div class="counter">
             <i class="fas fa-clock"></i>
             <div class="counter-value" data-count="5000">0</div>
-            <h3>Hours Saved</h3>
+            <h3>الساعات المحفوظة</h3>
           </div>
         </div>
       </div>
@@ -363,16 +413,16 @@
     <section id="team" class="team">
       <div class="container">
         <div class="section-header">
-          <h2>Meet Our Team</h2>
-          <p>The experts behind our success</p>
+          <h2>الفريق الذي يعمل لك</h2>
+          <p>الخبراء الذين يعملون لك</p>
         </div>
         <div class="team-grid">
           <div class="team-member">
             <div class="member-image">
               <img src="assets/images/team1.jpg" alt="Team Member" />
             </div>
-            <h3>John Doe</h3>
-            <p>CEO & Founder</p>
+            <h3>محمد عبدالله</h3>
+            <p>مطور النظام</p>
             <div class="social-links">
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -383,8 +433,8 @@
             <div class="member-image">
               <img src="assets/images/team2.jpg" alt="Team Member" />
             </div>
-            <h3>Jane Smith</h3>
-            <p>CTO</p>
+            <h3>محمد عبدالله</h3>
+            <p>مطور النظام</p>
             <div class="social-links">
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -395,8 +445,8 @@
             <div class="member-image">
               <img src="assets/images/team3.jpg" alt="Team Member" />
             </div>
-            <h3>Mike Johnson</h3>
-            <p>Lead Developer</p>
+            <h3>محمد عبدالله</h3>
+            <p>مطور النظام</p>
             <div class="social-links">
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -407,8 +457,8 @@
             <div class="member-image">
               <img src="assets/images/team4.jpg" alt="Team Member" />
             </div>
-            <h3>Sarah Williams</h3>
-            <p>UX Designer</p>
+            <h3>محمد عبدالله</h3>
+            <p>مطور النظام</p>
             <div class="social-links">
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -423,75 +473,110 @@
     <section id="pricing" class="pricing">
       <div class="container">
         <div class="section-header">
-          <h2>Simple, Transparent Pricing</h2>
-          <p>Choose the plan that fits your needs</p>
+          <h2>تسعير بسيط وشفاف</h2>
+          <p>اختر الباقة التي تناسبك</p>
         </div>
+
+        <!-- Pricing Toggle -->
+        <div class="pricing-toggle">
+          <span>شهري</span>
+          <label class="switch">
+            <input type="checkbox" id="pricingToggle" />
+            <span class="slider"></span>
+          </label>
+          <span>سنوي</span>
+          <span class="annual-discount">خصم 20%</span>
+        </div>
+
         <div class="pricing-grid">
           <div class="pricing-card">
             <div class="pricing-header">
-              <h3>Basic</h3>
-              <div class="price">$19<span>/month</span></div>
+              <h3>أعمال</h3>
+              <div class="price monthly-price">299ريال<span>/شهرياً</span></div>
+              <div class="price annual-price hidden">
+                239ريال<span>/شهرياً</span>
+              </div>
+              <div class="annual-note hidden">تدفع سنوياً 2870ريال</div>
             </div>
             <div class="pricing-features">
               <ul>
-                <li><i class="fas fa-check"></i> Single user</li>
-                <li><i class="fas fa-check"></i> 10GB storage</li>
-                <li><i class="fas fa-check"></i> Basic support</li>
-                <li><i class="fas fa-check"></i> 1 project</li>
-                <li><i class="fas fa-times"></i> Advanced features</li>
+                <li><i class="fas fa-check"></i> حساب واتساب أعمال رسمي</li>
+                <li><i class="fas fa-check"></i> 1000 رسالة شهرياً</li>
+                <li><i class="fas fa-check"></i> دعم فني أساسي</li>
+                <li><i class="fas fa-check"></i> نموذجين للردود التلقائية</li>
+                <li><i class="fas fa-times"></i> الروبوتات والأتمتة</li>
+                <li><i class="fas fa-times"></i> تقارير متقدمة</li>
               </ul>
             </div>
             <div class="pricing-footer">
-              <a href="#" class="btn btn-outline">Get Started</a>
+              <a href="#" class="btn btn-outline">ابدأ الآن</a>
             </div>
           </div>
+
           <div class="pricing-card popular">
             <div class="pricing-header">
-              <div class="popular-badge">Most Popular</div>
-              <h3>Pro</h3>
-              <div class="price">$49<span>/month</span></div>
+              <div class="popular-badge">الأكثر طلباً</div>
+              <h3>أعمال برو</h3>
+              <div class="price monthly-price">$99<span>/شهرياً</span></div>
+              <div class="price annual-price hidden">
+                $79<span>/شهرياً</span>
+              </div>
+              <div class="annual-note hidden">تدفع سنوياً $948</div>
             </div>
             <div class="pricing-features">
               <ul>
-                <li><i class="fas fa-check"></i> 5 users</li>
-                <li><i class="fas fa-check"></i> 50GB storage</li>
-                <li><i class="fas fa-check"></i> Priority support</li>
-                <li><i class="fas fa-check"></i> 10 projects</li>
-                <li><i class="fas fa-check"></i> Advanced features</li>
+                <li><i class="fas fa-check"></i> كل مميزات الباقة الأساسية</li>
+                <li><i class="fas fa-check"></i> 5000 رسالة شهرياً</li>
+                <li><i class="fas fa-check"></i> دعم فني على مدار الساعة</li>
+                <li><i class="fas fa-check"></i> روبوتات دردشة متقدمة</li>
+                <li><i class="fas fa-check"></i> تقارير وتحليلات شاملة</li>
+                <li><i class="fas fa-check"></i> حملات إعلانية مخصصة</li>
               </ul>
             </div>
             <div class="pricing-footer">
-              <a href="#" class="btn btn-primary">Get Started</a>
+              <a href="#" class="btn btn-primary">ابدأ الآن</a>
             </div>
           </div>
+
           <div class="pricing-card">
             <div class="pricing-header">
-              <h3>Enterprise</h3>
-              <div class="price">$99<span>/month</span></div>
+              <h3>الاحترافية</h3>
+              <div class="price monthly-price">$199<span>/شهرياً</span></div>
+              <div class="price annual-price hidden">
+                $159<span>/شهرياً</span>
+              </div>
+              <div class="annual-note hidden">تدفع سنوياً $1,908</div>
             </div>
             <div class="pricing-features">
               <ul>
-                <li><i class="fas fa-check"></i> Unlimited users</li>
-                <li><i class="fas fa-check"></i> 500GB storage</li>
-                <li><i class="fas fa-check"></i> 24/7 support</li>
-                <li><i class="fas fa-check"></i> Unlimited projects</li>
-                <li><i class="fas fa-check"></i> Custom features</li>
+                <li>
+                  <i class="fas fa-check"></i> كل مميزات الباقة الاحترافية
+                </li>
+                <li><i class="fas fa-check"></i> رسائل غير محدودة</li>
+                <li><i class="fas fa-check"></i> API مخصص</li>
+                <li><i class="fas fa-check"></i> تكامل مع الأنظمة الخارجية</li>
+                <li><i class="fas fa-check"></i> مدير حساب مخصص</li>
+                <li><i class="fas fa-check"></i> تدريب وإعداد مجاني</li>
               </ul>
             </div>
             <div class="pricing-footer">
-              <a href="#" class="btn btn-outline">Get Started</a>
+              <a href="#" class="btn btn-outline">اتصل بنا</a>
             </div>
           </div>
+        </div>
+
+        <div class="pricing-note">
+          <p>* الدفع السنوي يوفر لك 20% من قيمة الاشتراك</p>
         </div>
       </div>
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonials">
+    <section id="success-stories" class="testimonials">
       <div class="container">
         <div class="section-header">
-          <h2>What Our Customers Say</h2>
-          <p>Real feedback from real users</p>
+          <h2>ما يقوله العملاء</h2>
+          <p>تغطية العملاء الحقيقيين</p>
         </div>
         <div class="testimonial-slider">
           <div class="testimonial-slide">
@@ -504,9 +589,8 @@
                 <i class="fas fa-star"></i>
               </div>
               <p>
-                "This platform has transformed the way we work. The interface is
-                intuitive, and the features are exactly what we needed. Highly
-                recommended!"
+                "هذا النظام قد أعاد طريقة عملنا. الواجهة منطقية، والميزات بالضبط
+                ما كنا نحتاجها. موصى به بشدة!"
               </p>
               <div class="testimonial-author">
                 <img
@@ -514,8 +598,8 @@
                   alt="Testimonial Author"
                 />
                 <div>
-                  <h4>Robert Johnson</h4>
-                  <p>CEO, TechCorp</p>
+                  <h4>محمد عبدالله</h4>
+                  <p>مطور النظام</p>
                 </div>
               </div>
             </div>
@@ -530,9 +614,8 @@
                 <i class="fas fa-star"></i>
               </div>
               <p>
-                "We've tried several solutions before, but nothing compares to
-                this. The customer support is exceptional, and the platform is
-                incredibly reliable."
+                "لقد حاولنا عدة حلول من قبل، لكن لا شيء يقارن بهذا. الدعم العلمي
+                مثالي، والنظام يعمل بشكل مثالي."
               </p>
               <div class="testimonial-author">
                 <img
@@ -540,8 +623,8 @@
                   alt="Testimonial Author"
                 />
                 <div>
-                  <h4>Emily Davis</h4>
-                  <p>Marketing Director, GrowthCo</p>
+                  <h4>محمد عبدالله</h4>
+                  <p>مطور النظام</p>
                 </div>
               </div>
             </div>
@@ -556,9 +639,8 @@
                 <i class="fas fa-star-half-alt"></i>
               </div>
               <p>
-                "The ROI we've seen since implementing this solution has been
-                phenomenal. Our productivity has increased by 40% in just three
-                months."
+                "العائد المالي الذي رأيناه منذ تطبيق هذا الحل كان فوق المثالي.
+                لقد زادت إنتاجيتنا بنسبة 40% في ثلاثة أشهر فقط."
               </p>
               <div class="testimonial-author">
                 <img
@@ -566,8 +648,8 @@
                   alt="Testimonial Author"
                 />
                 <div>
-                  <h4>Michael Brown</h4>
-                  <p>Operations Manager, LogisTech</p>
+                  <h4>محمد عبدالله</h4>
+                  <p>مطور النظام</p>
                 </div>
               </div>
             </div>
@@ -575,11 +657,11 @@
         </div>
         <div class="testimonial-controls">
           <button class="prev-btn" aria-label="Previous testimonial">
-            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
           </button>
           <div class="testimonial-dots"></div>
           <button class="next-btn" aria-label="Next testimonial">
-            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-left"></i>
           </button>
         </div>
       </div>
@@ -589,73 +671,71 @@
     <section id="faq" class="faq">
       <div class="container">
         <div class="section-header">
-          <h2>Frequently Asked Questions</h2>
-          <p>Find answers to common questions</p>
+          <h2>الأسئلة الشائعة</h2>
+          <p>الأسئلة التي يسألها العملاء</p>
         </div>
         <div class="faq-accordion">
           <div class="faq-item">
             <div class="faq-question">
-              <h3>How do I get started?</h3>
+              <h3>كيف أبدأ؟</h3>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
               <p>
-                Getting started is easy! Simply click the "Get Started" button
-                at the top of the page, create an account, and follow the guided
-                setup process. You'll be up and running in minutes.
+                البدء بسهولة! فقط اضغط على "ابدأ الآن" في الأعلى من الصفحة،
+                إنشاء حساب، واتباع عملية التثبيت المرشحة. ستكون على موقعك في
+                ثوانٍ.
               </p>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-question">
-              <h3>Can I upgrade or downgrade my plan later?</h3>
+              <h3>هل يمكن تحديث الباقة أو إلغاءها لاحقًا؟</h3>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
               <p>
-                Yes, you can change your plan at any time. Log in to your
-                account, navigate to the billing section, and select the plan
-                that best suits your current needs. Changes take effect
-                immediately.
+                نعم، يمكنك تغيير الباقة أي وقت من الآن. قم بتسجيل الدخول إلى
+                حسابك، تصفح القسم المالي، واختر الباقة التي تناسب حالك الحالية.
+                سيتم تطبيق التغييرات في الفور.
               </p>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-question">
-              <h3>Is there a free trial available?</h3>
+              <h3>هل يوجد تجربة مجانية؟</h3>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
               <p>
-                Yes, we offer a 14-day free trial with full access to all
-                features. No credit card required to start your trial.
+                نعم، نقدم تجربة مجانية لمدة 14 يوم. لا يتطلب البدء في التجربة
+                إضافة بطاقة ائتمانية.
               </p>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-question">
-              <h3>How secure is my data?</h3>
+              <h3>كيف آمنة البيانات الخاصة بي؟</h3>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
               <p>
-                We take security seriously. All data is encrypted both in
-                transit and at rest. We use industry-standard security protocols
-                and regularly undergo security audits to ensure your information
-                remains protected.
+                نحن نتعامل مع الأمان بجدية. يتم تشفير جميع البيانات في الطريق
+                والبقاء. نحن نستخدم أعلى المعايير الأمنية لضمان أن المعلومات
+                الخاصة بك تظل محمية.
               </p>
             </div>
           </div>
           <div class="faq-item">
             <div class="faq-question">
-              <h3>What kind of support do you offer?</h3>
+              <h3>ما نوع الدعم الذي تقدمونه؟</h3>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
               <p>
-                We provide email, chat, and phone support depending on your
-                plan. Our support team is available during business hours, and
-                Enterprise customers receive 24/7 priority support.
+                نحن نقدم الدعم عبر البريد الإلكتروني، الدردشة، والهاتف، اعتمادًا
+                على الباقة التي تختارها. يتوفر الدعم لدينا خلال ساعات العمل،
+                ويتلقى العملاء المنتجات المتطورة الدعم 24/7.
               </p>
             </div>
           </div>
@@ -664,11 +744,11 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog">
+    <section id="blog" class="blog">
       <div class="container">
         <div class="section-header">
-          <h2>Latest from Our Blog</h2>
-          <p>Insights and updates from our team</p>
+          <h2>آخر المقالات</h2>
+          <p>المعلومات والتحديثات من فريقنا</p>
         </div>
         <div class="blog-grid">
           <div class="blog-card">
@@ -677,13 +757,13 @@
             </div>
             <div class="blog-content">
               <div class="blog-date">April 15, 2023</div>
-              <h3>10 Tips to Boost Your Productivity</h3>
+              <h3>10 أفكار لزيادة إنتاجيتك</h3>
               <p>
-                Learn how to maximize your efficiency and accomplish more in
-                less time with these proven strategies.
+                تعلم كيفية تعظيم الكفاءة وإنجاز المزيد في وقت أقل باستخدام هذه
+                الاستراتيجيات المحققة.
               </p>
               <a href="#" class="read-more"
-                >Read More <i class="fas fa-arrow-right"></i
+                >اقرأ المزيد <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </div>
@@ -692,14 +772,14 @@
               <img src="assets/images/blog2.jpg" alt="Blog Post" />
             </div>
             <div class="blog-content">
-              <div class="blog-date">April 8, 2023</div>
-              <h3>The Future of Remote Work</h3>
+              <div class="blog-date">أبريل 8, 2023</div>
+              <h3>المستقبل الآمن للعمل المنزلي</h3>
               <p>
-                Discover how companies are adapting to remote work and what
-                trends are shaping the future of the workplace.
+                اكتشف كيف تتكيف الشركات مع العمل المنزلي وما هي الاتجاهات التي
+                تشكل المستقبل.
               </p>
               <a href="#" class="read-more"
-                >Read More <i class="fas fa-arrow-right"></i
+                >اقرأ المزيد <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </div>
@@ -708,20 +788,20 @@
               <img src="assets/images/blog3.jpg" alt="Blog Post" />
             </div>
             <div class="blog-content">
-              <div class="blog-date">April 1, 2023</div>
-              <h3>Understanding Data Analytics</h3>
+              <div class="blog-date">أبريل 1, 2023</div>
+              <h3>فهم تحليل البيانات</h3>
               <p>
-                A beginner's guide to data analytics and how it can drive
-                business growth and informed decision-making.
+                دليل المبتدئين لتحليل البيانات وكيف يمكنها زيادة النمو التجاري
+                والقرارات المستنيرة.
               </p>
               <a href="#" class="read-more"
-                >Read More <i class="fas fa-arrow-right"></i
+                >اقرأ المزيد <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </div>
         </div>
         <div class="blog-cta">
-          <a href="#" class="btn btn-secondary">View All Posts</a>
+          <a href="#" class="btn btn-secondary">عرض جميع المقالات</a>
         </div>
       </div>
     </section>
@@ -730,15 +810,12 @@
     <section class="video-section">
       <div class="container">
         <div class="section-header">
-          <h2>See Our Platform in Action</h2>
-          <p>Watch how our solution transforms businesses</p>
+          <h2>شاهد عمل النظام</h2>
+          <p>شاهد كيف يحول الحل الأفضل</p>
         </div>
         <div class="video-container">
           <div class="video-thumbnail">
-            <img
-              src="assets/images/video-thumbnail.jpg"
-              alt="Video Thumbnail"
-            />
+            <video src="assets/videos/video.mp4" alt="Video Thumbnail" />
             <button class="play-button" aria-label="Play video">
               <i class="fas fa-play"></i>
             </button>
@@ -748,24 +825,24 @@
     </section>
 
     <!-- Subscribe Section -->
-    <section class="subscribe">
+    <section id="subscribe" class="subscribe">
       <div class="container">
         <div class="subscribe-content">
-          <h2>Stay Updated with the Latest News</h2>
+          <h2>ابق على اطلاع بآخر الأخبار</h2>
           <p>
-            Subscribe to our newsletter to receive updates, news, and exclusive
-            offers.
+            اشترك في خريطة النشر الإلكترونية لتلقي التحديثات، الأخبار، والعروض
+            المميزة.
           </p>
           <form class="subscribe-form">
             <input
               type="email"
-              placeholder="Enter your email address"
+              placeholder="أدخل عنوان بريدك الإلكتروني"
               required
             />
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-primary">اشترك</button>
           </form>
           <p class="form-note">
-            We respect your privacy. Unsubscribe at any time.
+            نحن نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت.
           </p>
         </div>
       </div>
@@ -777,7 +854,10 @@
         <div class="footer-content">
           <div class="footer-logo">
             <h2>Logo</h2>
-            <p>Transforming businesses with innovative solutions.</p>
+            <p>
+              منصة وايدرز Widers منصة سعودية متخصصة في تقديم خدمات ال API وأنظمة
+              الاتمتة للأعمال حسب الطلب.
+            </p>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
@@ -787,36 +867,36 @@
           </div>
           <div class="footer-links">
             <div class="footer-links-column">
-              <h3>Company</h3>
+              <h3>الشركة</h3>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="#">عننا</a></li>
+                <li><a href="#">المهنيين</a></li>
+                <li><a href="#">الأخبار</a></li>
+                <li><a href="#">المدونة</a></li>
               </ul>
             </div>
             <div class="footer-links-column">
-              <h3>Product</h3>
+              <h3>المنتجات</h3>
               <ul>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="#">الميزات</a></li>
+                <li><a href="#">التسعير</a></li>
+                <li><a href="#">التحقق</a></li>
+                <li><a href="#">الأسئلة الشائعة</a></li>
               </ul>
             </div>
             <div class="footer-links-column">
-              <h3>Support</h3>
+              <h3>الدعم</h3>
               <ul>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">مركز المساعدة</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+                <li><a href="#">سياسة الخصوصية</a></li>
+                <li><a href="#">الشروط والأحكام</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2023 Your Company. All rights reserved.</p>
+          <p>جميع الحقوق محفوظة &copy; 2025 Widers</p>
         </div>
       </div>
     </footer>
