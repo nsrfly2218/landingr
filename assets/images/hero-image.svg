@@ -1,0 +1,50 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .st0{fill:#3F51B5;}
+    .st1{fill:#C5CAE9;}
+    .st2{fill:#FFFFFF;}
+    .st3{fill:#4CAF50;}
+    .st4{fill:#2C3E50;}
+    .st5{fill:#F5F5F5;}
+  </style>
+  
+  <!-- Background elements -->
+  <circle class="st1" cx="480" cy="120" r="80" opacity="0.6" />
+  <circle class="st1" cx="120" cy="300" r="60" opacity="0.4" />
+  
+  <!-- Dashboard/Screen -->
+  <rect class="st2" x="150" y="80" width="300" height="220" rx="10" />
+  <rect class="st5" x="150" y="80" width="300" height="30" rx="10 10 0 0" />
+  <circle class="st0" cx="165" cy="95" r="5" />
+  <circle class="st3" cx="185" cy="95" r="5" />
+  <circle class="st4" cx="205" cy="95" r="5" />
+  
+  <!-- Content inside screen -->
+  <rect class="st1" x="170" y="130" width="120" height="10" rx="5" />
+  <rect class="st1" x="170" y="150" width="80" height="10" rx="5" />
+  <rect class="st0" x="170" y="180" width="60" height="25" rx="5" />
+  
+  <!-- Chart/Graph -->
+  <rect class="st5" x="300" y="130" width="130" height="80" rx="5" />
+  <polyline points="310,180 330,160 350,170 370,140 390,150 410,120" fill="none" stroke="#4CAF50" stroke-width="3" />
+  <circle class="st3" cx="310" cy="180" r="4" />
+  <circle class="st3" cx="330" cy="160" r="4" />
+  <circle class="st3" cx="350" cy="170" r="4" />
+  <circle class="st3" cx="370" cy="140" r="4" />
+  <circle class="st3" cx="390" cy="150" r="4" />
+  <circle class="st3" cx="410" cy="120" r="4" />
+  
+  <!-- Bottom elements -->
+  <rect class="st1" x="170" y="230" width="260" height="50" rx="5" />
+  <rect class="st0" x="180" y="240" width="40" height="30" rx="5" />
+  <rect class="st0" x="230" y="240" width="40" height="30" rx="5" />
+  <rect class="st0" x="280" y="240" width="40" height="30" rx="5" />
+  <rect class="st0" x="330" y="240" width="40" height="30" rx="5" />
+  <rect class="st0" x="380" y="240" width="40" height="30" rx="5" />
+  
+  <!-- Decorative elements -->
+  <circle class="st0" cx="100" cy="100" r="15" opacity="0.7" />
+  <circle class="st3" cx="500" cy="250" r="20" opacity="0.7" />
+  <rect class="st0" x="50" y="200" width="30" height="30" rx="5" transform="rotate(45 65 215)" opacity="0.5" />
+  <rect class="st3" x="520" cy="170" width="20" height="20" rx="3" transform="rotate(20 520 170)" opacity="0.5" />
+</svg> 

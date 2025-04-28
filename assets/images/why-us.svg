@@ -1,0 +1,55 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .st0{fill:#3F51B5;}
+    .st1{fill:#C5CAE9;}
+    .st2{fill:#FFFFFF;}
+    .st3{fill:#4CAF50;}
+    .st4{fill:#2C3E50;}
+    .st5{fill:#F5F5F5;}
+  </style>
+  
+  <!-- Background shapes -->
+  <circle class="st1" cx="150" cy="200" r="140" opacity="0.2" />
+  <rect class="st1" x="350" y="80" width="200" height="200" rx="20" opacity="0.1" />
+  
+  <!-- Person with shield -->
+  <circle class="st2" cx="200" cy="180" r="80" stroke="#3F51B5" stroke-width="3" />
+  <circle class="st4" cx="200" cy="140" r="25" /> <!-- Head -->
+  <rect class="st4" x="175" y="165" width="50" height="70" rx="15" /> <!-- Body -->
+  
+  <!-- Arms -->
+  <rect class="st4" x="155" y="175" width="20" height="60" rx="10" transform="rotate(-20 155 175)" />
+  <rect class="st4" x="225" y="175" width="20" height="60" rx="10" transform="rotate(20 225 175)" />
+  
+  <!-- Shield -->
+  <path class="st0" d="M200,190 L180,170 L200,150 L220,170 L200,190 Z" />
+  <circle class="st3" cx="200" cy="170" r="10" />
+  
+  <!-- Growth graph -->
+  <rect class="st2" x="350" y="150" width="180" height="120" rx="10" stroke="#3F51B5" stroke-width="3" />
+  <line x1="370" y1="240" x2="510" y2="240" stroke="#C5CAE9" stroke-width="2" />
+  <line x1="370" y1="210" x2="510" y2="210" stroke="#C5CAE9" stroke-width="1" />
+  <line x1="370" y1="180" x2="510" y2="180" stroke="#C5CAE9" stroke-width="1" />
+  
+  <!-- Graph bars -->
+  <rect class="st0" x="380" y="210" width="20" height="30" rx="3" />
+  <rect class="st0" x="415" y="190" width="20" height="50" rx="3" />
+  <rect class="st0" x="450" y="170" width="20" height="70" rx="3" />
+  <rect class="st3" x="485" y="160" width="20" height="80" rx="3" />
+  
+  <!-- Decorative elements -->
+  <circle class="st3" cx="500" cy="100" r="15" opacity="0.7" />
+  <circle class="st0" cx="100" cy="330" r="20" opacity="0.7" />
+  <rect class="st3" x="400" y="300" width="40" height="40" rx="5" opacity="0.5" />
+  <rect class="st0" x="300" y="50" width="30" height="30" rx="5" transform="rotate(45 300 50)" opacity="0.5" />
+  
+  <!-- Check marks -->
+  <circle class="st2" cx="300" cy="130" r="15" stroke="#4CAF50" stroke-width="2" />
+  <polyline points="292,130 298,136 308,126" stroke="#4CAF50" stroke-width="2" fill="none" />
+  
+  <circle class="st2" cx="300" cy="180" r="15" stroke="#4CAF50" stroke-width="2" />
+  <polyline points="292,180 298,186 308,176" stroke="#4CAF50" stroke-width="2" fill="none" />
+  
+  <circle class="st2" cx="300" cy="230" r="15" stroke="#4CAF50" stroke-width="2" />
+  <polyline points="292,230 298,236 308,226" stroke="#4CAF50" stroke-width="2" fill="none" />
+</svg> 
